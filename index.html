@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card | Frontend Wizards Stage 0</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <article data-testid="test-profile-card" class="profile-card">
+        <section class="profile-card-sec1">
+          <figure class="avatar">
+          <img
+            src="https://i.pravatar.cc/200"
+            alt="Profile photo of Ujah Collins"
+            data-testid="test-user-avatar"
+          />
+        </figure>
+        <header>
+          <h2 data-testid="test-user-name">Ujah Collins</h2>
+        </header>
+        </section>
+
+        <section class="profile-card-sec2">
+               <p data-testid="test-user-bio">
+          Frontend Developer passionate about crafting intuitive UIs and seamless
+          user experiences with React and JavaScript.
+        </p>
+
+        <p>
+          Current Time (ms):
+          <span data-testid="test-user-time" id="current-time"></span>
+        </p>
+
+        <nav aria-label="social links" data-testid="test-user-social-links" class="social-links" >
+          <ul>
+            <li>
+              <a
+                href="https://twitter.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-testid="test-user-social-twitter"
+              >
+                Twitter
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-testid="test-user-social-github"
+              >
+                GitHub
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://linkedin.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-testid="test-user-social-linkedin"
+              >
+                LinkedIn
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <section data-testid="test-user-hobbies">
+          <h3>Hobbies</h3>
+          <ul>
+            <li>Coding</li>
+            <li>Gaming</li>
+            <li>Music</li>
+          </ul>
+        </section>
+
+        <section data-testid="test-user-dislikes">
+          <h3>Dislikes</h3>
+          <ul>
+            <li>Procrastination</li>
+            <li>Messy code</li>
+            <li>Unoptimized UX</li>
+          </ul>
+        </section>
+        </section>
+      </article>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
